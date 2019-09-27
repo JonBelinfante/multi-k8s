@@ -8,4 +8,10 @@ before_install:
 script:
         - docker run -e CI=true -t jonbelinfante/docker-multi-container3 npm run test
 
+after_success:
+    - docker build -t jonbelinfante/multi-client ./client
+    - docker build -t jonbelinfante/multi-nginx ./nginx
+    - docker build -t jonbelinfante/multi-server ./server
+    - docker build -t jonbelinfante/multi-worker ./worker
+      
 
