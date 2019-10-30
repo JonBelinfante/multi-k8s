@@ -7,7 +7,7 @@
             "hostname": "client",
             "essential": false,
             "memory": 128
-        }
+        },
         {
             "name": "server",
             "image": "jonbelinfante/multi-server",
@@ -17,14 +17,14 @@
         },
         {
             "name": "worker",
-            "image": "jonbelinfante/multi-worker",,
+            "image": "jonbelinfante/multi-worker",
             "hostname": "worker",
             "essential": false,
             "memory": 128
         },
         {
             "name": "nginx",
-            "image": "jonbelinfante/multi-nginx",,
+            "image": "jonbelinfante/multi-nginx",
             "hostname": "nginx",
             "essential": true,
             "portMappings": [{
